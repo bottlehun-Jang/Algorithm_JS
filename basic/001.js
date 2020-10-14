@@ -15,5 +15,3 @@ for (let i = 1; i <= N; i++) {
 }
 
 console.log(sum);
-
-// 산술 연산자를 이용하여 반복문 구성.

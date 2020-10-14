@@ -22,5 +22,3 @@ let resultNumber = properDivisorArr.reduce((prev, curr) => {
 let result = properDivisorArr.join(' + ') + ` = ${resultNumber}`;
 
 console.log(result)
-
-// 진약수 = 자기 자신을 제외한 양의 약수
