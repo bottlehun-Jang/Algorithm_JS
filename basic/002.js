@@ -9,21 +9,19 @@
 
 const A = 3, B = 7;
 
-const numberlist = [];
+const numberArr = [];
 let sum = 0;
 
 for (let i = A; i < B + 1; i++) {
-    numberlist.push(`${i}`);
+    numberArr.push(`${i}`);
     sum += i;
 }
 
-let result = numberlist.join('+ ');
+let result = numberArr.join('+ ');
 result += `= ${sum}`;
 
 console.log(result);
 
-// 답
-
-for (let i = A; i < B + 1; i++) {
-    console.log()
-}
+// Array에 숫자 push하여 수식 정보 저장
+// Array.join을 통해 수식 정보 가공 후 string 출력
+// Templete String 으로 표현하여 가공된 수식 정보와 sum값을 string 출력.
