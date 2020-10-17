@@ -13,3 +13,18 @@
 // 입력 : bE au T I fu L
 // 출력 : beautiful
 
+let input = "bE au T I fu L"
+
+String.prototype.replaceAll = function (org, dest) {
+    return this.split(org).join(dest);
+}
+
+// Type 1_ prototype을 이용하여 method 추가.
+let input2 = input.replaceAll(' ', '');
+input2 = input2.toLowerCase();
+
+// Type 2_ replace 정규식을 이용하여 조건 추가.
+input = input.replace(/ /g, '');
+input = input.toLowerCase();
+
+console.log(input + '/' + input2);
